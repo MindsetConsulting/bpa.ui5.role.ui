@@ -1,0 +1,39 @@
+specVersion: "3.1"
+metadata:
+  name: taskuiwrapper
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+        backend:
+          - path: /bpa_role_assignment_ui.bparoleassignmentuiworkflowuimodule/api/public/workflow/rest/v1
+            pathPrefix: /public/workflow/rest/v1
+            url: https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com
+            destination: bpa_workflowruntime                      
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: taskuiwrapper
+        ui5Theme: sap_horizon
+    - name: fiori-tools-servestatic
+      afterMiddleware: compression
+      configuration:
+        paths:
+          - path: /resources/bparoleassignmentui/workflowuimodule
+            src: ../workflow-ui-module/webapp
+          - path: /appconfig
+            src: appconfig
