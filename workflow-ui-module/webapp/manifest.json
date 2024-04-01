@@ -106,8 +106,8 @@
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "bpa_role_assigment_ui",
-                    "viewName": "bpa_role_assigment_ui"
+                    "viewId": "App",
+                    "viewName": "App"
                 }
             }
         },
