@@ -42,10 +42,10 @@ xmlns="sap.m">
 			selectionFinish="handleSelectionFinish"
 			width="350px"
 			items="{
-				path: '/ProductCollection',
-				sorter: { path: 'Name' }
+				path: '/profilesVH',
+				sorter: { path: 'ProfileName' }
 			}">
-			<core:Item id="Profile" key="{ProductId}" text="{Name}"/>
+			<core:Item id="ProfileName" key="{ProductId}" text="{ProfileName}"/>
 		</MultiComboBox>
 	</l:VerticalLayout>
         </content>
