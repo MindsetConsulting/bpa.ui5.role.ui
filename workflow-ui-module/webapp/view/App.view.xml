@@ -36,7 +36,7 @@ xmlns="sap.m">
         id="profileBox"
 		class="sapUiContentPadding"
 		width="100%">
-         <Label id="ComboBoxLabel" text="Select Roles" design="Bold" /> 
+         <Label id="ComboBoxLabel" text="Select Profiles" design="Bold" /> 
 			<MultiComboBox
             id="profileDropDown"
 			selectionChange="handleSelectionChange"
