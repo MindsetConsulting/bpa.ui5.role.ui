@@ -7,7 +7,9 @@ Test with a UUID: In the "Show Task UI" dialog box, enter the following UUID and
 UUID: 95e362ab-8256-4a03-b70a-62c51033576f 
 
 ![image](https://github.com/MindsetConsulting/bpa.ui5.role.ui/assets/91226856/34cb2cd3-978f-4874-848f-7e41e3781dc7)
-![image](https://github.com/MindsetConsulting/bpa.ui5.role.ui/assets/91226856/93786f14-443c-431a-b0be-9d5709ab856a)
+
+![image](https://github.com/MindsetConsulting/bpa.ui5.role.ui/assets/91226856/63aa2e09-a0fb-441e-b4fd-9faa98de0066)
+
 
 
 You may also encounter a CORS error when testing locally. In order to by pass the CORS policy. You will need to install a browswer plugin or create a proxy (there are other options as well).
