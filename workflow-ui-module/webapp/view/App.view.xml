@@ -36,16 +36,17 @@ xmlns="sap.m">
         id="profileBox"
 		class="sapUiContentPadding"
 		width="100%">
-		<MultiComboBox
+         <Label id="ComboBoxLabel" text="Select Profiles" design="Bold" /> 
+			<MultiComboBox
             id="profileDropDown"
 			selectionChange="handleSelectionChange"
 			selectionFinish="handleSelectionFinish"
 			width="350px"
 			items="{
-				path: '/profilesVH',
+				path: 'profiles>/ProfileName',
 				sorter: { path: 'ProfileName' }
 			}">
-			<core:Item id="ProfileName" key="{ProductId}" text="{ProfileName}"/>
+			<core:Item id="ProfileName" key="{profiles>key}" text="{profiles>text}"/>
 		</MultiComboBox>
 	</l:VerticalLayout>
         </content>

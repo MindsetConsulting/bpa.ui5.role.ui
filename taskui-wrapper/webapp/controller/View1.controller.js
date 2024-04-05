@@ -13,9 +13,9 @@ sap.ui.define([
 
         return Controller.extend("taskuiwrapper.controller.View1", {
             onInit: function () {
-                var sServiceUrl = "https://s4hana2022.mindsetconsulting.com:44301/sap/opu/odata/sap/ZB_USER_ASSIGNMENT/";
-                var oModel = new sap.ui.model.odata.v2.ODataModel(sServiceUrl);
-                this.getView().setModel(oModel); 
+                // var sServiceUrl = "https://s4hana2022.mindsetconsulting.com:44301/sap/opu/odata/sap/ZB_USER_ASSIGNMENT/";
+                // var oModel = new sap.ui.model.odata.v2.ODataModel(sServiceUrl);
+                // this.getView().setModel(oModel); 
             },
 
             onShowTaskUI: function () {
