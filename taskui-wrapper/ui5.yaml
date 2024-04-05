@@ -17,7 +17,10 @@ server:
           - path: /bpa_role_assignment_ui.bparoleassignmentuiworkflowuimodule/api/public/workflow/rest/v1
             pathPrefix: /public/workflow/rest/v1
             url: https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com
-            destination: bpa_workflowruntime                      
+            destination: bpa_workflowruntime 
+          - path: /sap
+            url: https://s4hana2022.mindsetconsulting.com:44301
+            destination: ProfileVH                    
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
