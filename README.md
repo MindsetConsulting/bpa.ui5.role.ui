@@ -12,5 +12,5 @@ UUID: 95e362ab-8256-4a03-b70a-62c51033576f
 
 
 
-You may also encounter a CORS error when testing locally. In order to by pass the CORS policy. You will need to install a browswer plugin or create a proxy (there are other options as well).
-I used the Google Chrome plugin : https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+You may also encounter a CORS error when testing locally. To bypass the CORS policy. You will need to install a browser plugin or create a proxy (there are other options as well).
+I used the Google Chrome plugin: https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
