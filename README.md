@@ -8,9 +8,8 @@ UUID: 95e362ab-8256-4a03-b70a-62c51033576f
 
 ![image](https://github.com/MindsetConsulting/bpa.ui5.role.ui/assets/91226856/34cb2cd3-978f-4874-848f-7e41e3781dc7)
 
-![image](https://github.com/MindsetConsulting/bpa.ui5.role.ui/assets/91226856/63aa2e09-a0fb-441e-b4fd-9faa98de0066)
+![image](https://github.com/MindsetConsulting/bpa.ui5.role.ui/assets/91226856/4dd39ed5-f838-4fa5-bf4e-5b81bfb29680)
 
 
 
-You may also encounter a CORS error when testing locally. To bypass the CORS policy. You will need to install a browser plugin or create a proxy (there are other options as well).
-I used the Google Chrome plugin: https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+
