@@ -17,7 +17,11 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: http://localhost
+            url: http://s4hana2022.mindsetconsulting.com:44300
+            destination: profilesVH
+          - path: /V2
+            url: https://services.odata.org/
+            destination: Northwind
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

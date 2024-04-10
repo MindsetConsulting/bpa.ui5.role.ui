@@ -16,12 +16,21 @@
             "toolsId": "b937175d-390a-45b6-87c9-768f86130af0"
         },
         "dataSources": {
-            "mainService": {
-                "uri": "/sap/opu/odata/",
+            "ZB_USER_ASSIGNMENT1": {
+                "uri": "/sap/opu/odata/sap/ZB_USER_ASSIGNMENT/",
                 "type": "OData",
                 "settings": {
                     "annotations": [],
-                    "localUri": "localService/metadata.xml",
+                    "localUri": "localService/ZB_USER_ASSIGNMENT1/metadata.xml",
+                    "odataVersion": "2.0"
+                }
+            },
+            "Northwind": {
+                "uri": "/V2/Northwind/Northwind.svc/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/Northwind/metadata.xml",
                     "odataVersion": "2.0"
                 }
             }
@@ -69,10 +78,29 @@
                     "bundleName": "bparoleassignmentui.workflowuimodule.i18n.i18n"
                 }
             },
-            "": {
-                "dataSource": "mainService",
+            "ZB_USER_ASSIGNMENT1": {
+                "dataSource": "ZB_USER_ASSIGNMENT1",
                 "preload": true,
-                "settings": {}
+                "settings": {
+                    "defaultBindingMode": "TwoWay",
+                    "defaultCountMode": "Inline",
+                    "refreshAfterChange": false,
+                    "metadataUrlParams": {
+                        "sap-value-list": "none"
+                    }
+                }
+            },
+            "Northwind": {
+                "dataSource": "Northwind",
+                "preload": true,
+                "settings": {
+                    "defaultBindingMode": "TwoWay",
+                    "defaultCountMode": "Inline",
+                    "refreshAfterChange": false,
+                    "metadataUrlParams": {
+                        "sap-value-list": "none"
+                    }
+                }
             }
         },
         "resources": {
@@ -196,5 +224,4 @@
         },
         "category": "approval"
     }
-
 }
