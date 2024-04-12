@@ -16,13 +16,7 @@
         "uaa.user"
       ]
     }
-  ],
-  "routes": [ 
-  { 
-    "source": "^/sap/opu/odata/sap/ZB_USER_ASSIGNMENT$", 
-    "destination": "profilesvh"
-  } 
-]
+  ]
 }
 
 
