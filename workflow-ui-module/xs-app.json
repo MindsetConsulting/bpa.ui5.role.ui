@@ -3,6 +3,10 @@
   "authenticationMethod": "route",
   "routes": [
     {
+      "source": "^/sap/opu/odata/sap/ZB_USER_ASSIGNMENT/(.*)$",
+      "destination": "profilesvh"
+    },
+    {
       "source": "^/api/(.*)$",
       "target": "$1",
       "service": "com.sap.spa.processautomation",
