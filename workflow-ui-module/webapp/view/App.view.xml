@@ -26,15 +26,24 @@ xmlns="sap.m">
         </form:SimpleForm>
 
         <html:hr></html:hr>
-	<l:VerticalLayout
-        id="profileBox"
-		class="sapUiContentPadding"
-		width="100%">
-         <Label id="ComboBoxLabel" text="Select Profiles" design="Bold" /> 
-        <MultiComboBox id="userAssignments" items="{ZB_USER_ASSIGNMENT1>/profilesVH}">
-        <core:Item  id = "ProfileName" key="{ZB_USER_ASSIGNMENT1>ProfileName}" text="{ZB_USER_ASSIGNMENT1>ProfileName}" />
-        </MultiComboBox>
-	</l:VerticalLayout>
+        <l:VerticalLayout
+            id="profileBox"
+            class="sapUiContentPadding"
+            width="100%">
+            <Label id="ComboBoxLabel" text="Select Profiles" design="Bold" /> 
+            <MultiComboBox 
+                id="userAssignments"
+                selectionChange="handleSelectionChange"
+                selectionFinish="handleSelectionFinish" 
+                items="{ZB_USER_ASSIGNMENT1>/profilesVH}">
+            <core:Item  id = "ProfileName" key="{ZB_USER_ASSIGNMENT1>ProfileName}" text="{ZB_USER_ASSIGNMENT1>ProfileName}" />
+            </MultiComboBox>
+        </l:VerticalLayout>
+        <FlexBox id="comment-wrapper" direction="Column" class="sapUiSmallMargin" width="auto">
+            <CheckBox id="Ack" text="I acknowledge that we have received your order and will process it based on the availability" />
+            <Label id="comment-label" text="Comment" />
+            <TextArea id="comment-field" showExceededText="true" maxLength="1000" width="100%" height="120px" value="{context>/comment}"/>
+        </FlexBox>
         </content>
     </Page>
 </App>
