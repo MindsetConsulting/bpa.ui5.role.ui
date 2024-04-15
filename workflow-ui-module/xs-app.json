@@ -3,8 +3,11 @@
   "authenticationMethod": "route",
   "routes": [
     {
-      "source": "^/sap/opu/odata/sap/ZB_USER_ASSIGNMENT/(.*)$",
-      "destination": "profilesvh"
+      "source": "^/sap/(.*)$",
+      "target": "/sap/$1",
+      "destination": "profilesVH",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
     },
     {
       "source": "^/api/(.*)$",

@@ -16,9 +16,9 @@ server:
             - /test-resources
           url: https://ui5.sap.com
         backend:
-          -profilesVH path: /sap
+          - path: /sap
             url: http://s4hana2022.mindsetconsulting.com:44300
-            destination: 
+            destination: profilesVH
           - path: /V2
             url: https://services.odata.org/
             destination: Northwind
