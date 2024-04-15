@@ -169,7 +169,6 @@
             "required": [
                 "customerName",
                 "orderNumber",
-                "orderAmount",
                 "orderDate",
                 "expectedDeliveryDate",
                 "shippingCountry"
@@ -184,11 +183,6 @@
                     "type": "string",
                     "title": "Order Number",
                     "description": "Order Number"
-                },
-                "orderAmount": {
-                    "type": "number",
-                    "title": "Order Amount",
-                    "description": "Order Amount"
                 },
                 "orderDate": {
                     "type": "string",

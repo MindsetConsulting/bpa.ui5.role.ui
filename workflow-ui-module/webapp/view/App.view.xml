@@ -20,8 +20,6 @@ xmlns="sap.m">
                 <Input id="customer-name-field" value="{context>/customerName}" editable="false"/>
                 <Label id="order-number-label" text="Last Name" labelFor="order-number-field"/>
                 <Input id="order-number-field" value="{context>/orderNumber}" editable="false"/>
-                <Label id="order-amount-label" text="Employee Id" labelFor="order-amount-field"/>
-                <Input id="order-amount-field" value="{context>/orderAmount}" editable="false"/>
                 <Label id="order-date-label" text="Company" labelFor="order-date-field"/>
                 <Input id="order-date-field" value="{context>/orderDate}" editable="false"/>
                 <Label id="shipping-country-label" text="Department" labelFor="shipping-country-field"/>
