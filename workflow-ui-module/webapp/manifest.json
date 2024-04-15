@@ -198,7 +198,7 @@
             ],
             "properties": {
                 "comment": {
-                    "type": "string",
+                    "type": "array",
                     "title": "Comment",
                     "description": "Comment to buyer"
                 }
