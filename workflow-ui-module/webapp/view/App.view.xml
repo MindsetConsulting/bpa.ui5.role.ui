@@ -15,17 +15,13 @@ xmlns="sap.m">
         <content>
         <form:SimpleForm id="request-information-form" editable="false" layout="ResponsiveGridLayout" singleContainerFullSize="false">
             <form:content>
-                <core:Title id="vacation-timerange-heading" text="A new hire needs SAP access. Submit roles below."/>
-                <Label id="customer-name-label" text="First Name" labelFor="customer-name-field"/>
-                <Input id="customer-name-field" value="{context>/customerName}" editable="false"/>
-                <Label id="order-number-label" text="Last Name" labelFor="order-number-field"/>
-                <Input id="order-number-field" value="{context>/orderNumber}" editable="false"/>
-                <Label id="order-date-label" text="Company" labelFor="order-date-field"/>
-                <Input id="order-date-field" value="{context>/orderDate}" editable="false"/>
-                <Label id="shipping-country-label" text="Department" labelFor="shipping-country-field"/>
-                <Input id="shipping-country-field" value="{context>/shippingCountry}" editable="false"/>
-                <Label id="expected-delivery-date-label" text="Email" labelFor="expected-delivery-date-field"/>
-                <Input id="expected-delivery-date-field" value="{context>/expectedDeliveryDate}" editable="false"/>
+                <core:Title id="vacation-timerange-heading" text="A new hire needs SAP access. Submit profiles below."/>
+                <Label id="first-name-label" text="First Name" labelFor="first-name-field"/>
+                <Input id="first-name-field" value="{context>/firstName}" editable="false"/>
+                <Label id="last-name-label" text="Last Name" labelFor="last-name-field"/>
+                <Input id="last-name-field" value="{context>/lastName}" editable="false"/>
+                <Label id="department-label" text="Department" labelFor="department-field"/>
+                <Input id="department-field" value="{context>/department}" editable="false"/>
             </form:content>
         </form:SimpleForm>
 
