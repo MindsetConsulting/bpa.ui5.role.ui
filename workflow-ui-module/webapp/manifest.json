@@ -167,43 +167,25 @@
             "title": "input",
             "type": "object",
             "required": [
-                "customerName",
-                "orderNumber",
-                "orderAmount",
-                "orderDate",
-                "expectedDeliveryDate",
-                "shippingCountry"
+                "firstName",
+                "lastName",
+                "department"
             ],
             "properties": {
-                "customerName": {
+                "firstName": {
                     "type": "string",
-                    "title": "Customer Name",
-                    "description": "Customer Name"
+                    "title": "First Name",
+                    "description": "First Name"
                 },
-                "orderNumber": {
+                "lastName": {
                     "type": "string",
-                    "title": "Order Number",
-                    "description": "Order Number"
+                    "title": "Last Name",
+                    "description": "Last Name"
                 },
-                "orderAmount": {
-                    "type": "number",
-                    "title": "Order Amount",
-                    "description": "Order Amount"
-                },
-                "orderDate": {
+                "department": {
                     "type": "string",
-                    "title": "Order Date",
-                    "description": "Order Date"
-                },
-                "expectedDeliveryDate": {
-                    "type": "string",
-                    "title": "Expected Delivery Date",
-                    "description": "End Date of the Vacation"
-                },
-                "shippingCountry": {
-                    "type": "string",
-                    "title": "Shipping Country",
-                    "description": "Shipping Country"
+                    "title": "Department",
+                    "description": "Department"
                 }
             }
         },
