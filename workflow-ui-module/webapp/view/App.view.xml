@@ -12,9 +12,6 @@ xmlns:smartField="sap.ui.comp.smartfield"
 >
 <App id="app">
     <Page id = "scroll">
-         <VBox id = "vbox"  >
-            <Image id="image" src="images/blueLogo.jpg"   width="150px" height="50px" backgroundPosition="right" />
-         </VBox>
         <content>
         <form:SimpleForm id="request-information-form" editable="false" layout="ResponsiveGridLayout" singleContainerFullSize="false">
             <form:content>
