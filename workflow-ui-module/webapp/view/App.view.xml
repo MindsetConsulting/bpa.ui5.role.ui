@@ -31,9 +31,11 @@ xmlns:smartField="sap.ui.comp.smartfield"
             width="100%">
             <Label id="ComboBoxLabel" text="Select Profiles" design="Bold" /> 
             <MultiComboBox 
+
                 id="userAssignments" 
                 selectionChange="handleSelectionChange"
                 selectionFinish="handleSelectionFinish"
+
                 items="{ZB_USER_ASSIGNMENT1>/profilesVH}">
             <core:Item  id = "ProfileName" key="{ZB_USER_ASSIGNMENT1>ProfileName}" text="{ZB_USER_ASSIGNMENT1>ProfileName}" />
             </MultiComboBox>

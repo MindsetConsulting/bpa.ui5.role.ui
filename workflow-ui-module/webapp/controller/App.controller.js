@@ -1,9 +1,10 @@
 sap.ui.define(
   [
+    "sap/m/MessageToast",
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel"
   ],
-  function (BaseController, JSONModel) {
+  function (MessageToast, BaseController, JSONModel) {
     "use strict";
 
     return BaseController.extend("bparoleassignmentui.workflowuimodule.controller.App", {
