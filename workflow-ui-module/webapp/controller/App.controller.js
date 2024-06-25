@@ -9,7 +9,7 @@ sap.ui.define(
 
     return BaseController.extend("bparoleassignmentui.workflowuimodule.controller.App", {
       onInit() {
-        
+
       },
       handleSelectionChange: function(oEvent) {
         var changedItem = oEvent.getParameter("changedItem");
